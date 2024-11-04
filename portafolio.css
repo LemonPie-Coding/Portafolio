@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth; /* Esto permite el desplazamiento suave */
+}
+body {
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+nav {
+    background-color: #8C5845;
+    height: 3.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+main {
+    width: 1025px;
+    margin:auto;
+}
+
+.nav-items {
+
+    align-content: center;
+}
+.nav-items a {
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in;
+    height: 100%;
+}
+a:hover {
+    background-color: #5c3a2d;
+}
+
+section {
+    padding: 1rem;
+    display: flex;
+    background-color: #fff;
+    margin-top: 4rem;
+    gap: 7rem;
+}
+.about-me  img {
+    width: 280px;
+    height: 280px;
+}
+.about-me_text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+h2 {
+    font-size: 4rem;
+    margin: 0;
+    font-family: Caveat;
+}
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 30rem; /* Hace que cubra la ventana completa */
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+    z-index: -1; /* Coloca el video detrás del contenido */
+    pointer-events: none; /* Esto desactiva los eventos del mouse */
+    object-fit: cover; /* Esto recorta el video manteniendo la relación de aspecto */
+}
+#portfolio, #studies, #work-exp, #contact, #about-me {
+    scroll-margin-top: 3.9rem; /* Ajusta el valor según la altura de tu navbar */
+}
+.portfolio-project1 {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.project1-img {
+    width: 230px;
+    display: block;
+    flex: 2;
+    padding-right: 2rem;
+}
+
+button {
+    border-radius: 0.2rem;
+    border: none;
+    color: #fff;
+    background-color: #8C5845;
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+button:hover {
+    background-color: #5c3a2d;
+}
+.studies {
+    background-color: #e4e4e44d;
+    padding-left: 2rem;
+    border-radius: 1rem;
+}
+.studies1 {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    margin-bottom: 3rem;
+}
+.studies-img {
+    width: 280px;
+    height: 100px;
+    flex: 2;
+    padding-right: 2rem;
+}
