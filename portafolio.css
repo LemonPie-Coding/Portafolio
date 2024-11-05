@@ -1,6 +1,32 @@
 html {
     scroll-behavior: smooth; /* Esto permite el desplazamiento suave */
 }
+.video-background2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Asegúrate de que esté detrás de otros elementos */
+}
+
+#background-video2 {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    display: block; /* Asegura que no haya espacio debajo del video */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(226, 226, 226, 0.952); /* Color negro con opacidad del 50% */
+    z-index: 1; /* Asegúrate de que esté por encima del video */
+}
 body {
     margin: 0;
     font-family: 'Noto Serif JP', serif;
@@ -38,15 +64,16 @@ a:hover {
 }
 
 section {
-    padding: 1rem;
+    padding:4rem 2.5rem;
     display: flex;
     background-color: #fff;
-    margin-top: 4rem;
     gap: 7rem;
+
 }
 .about-me  img {
     width: 280px;
     height: 280px;
+    padding-top: 3rem;
 }
 .about-me_text-container {
     display: flex;
@@ -55,9 +82,10 @@ section {
     gap: 1rem;
 }
 h2 {
-    font-size: 4rem;
+    font-size: 6rem;
     margin: 0;
     font-family: Caveat;
+    padding-bottom: 3rem;
 }
 .video-background {
     position: relative;
@@ -77,17 +105,31 @@ h2 {
 #portfolio, #studies, #work-exp, #contact, #about-me {
     scroll-margin-top: 3.9rem; /* Ajusta el valor según la altura de tu navbar */
 }
+
+section:has(.portfolio) {
+    background-color: #8C5845;
+    color: #fff;
+
+    button {
+        background-color: #fff;
+        color: #5c3a2d;
+    }
+
+    button:hover {
+        background-color: #5c3a2d;
+        color: #fff;
+    }
+    img {
+        width: 230px;
+        display: block;
+        flex: 2;
+        padding-right: 2rem;
+    }
+}
 .portfolio-project1 {
     display: flex;
     align-items: center;
     gap: 5rem;
-}
-
-.project1-img {
-    width: 230px;
-    display: block;
-    flex: 2;
-    padding-right: 2rem;
 }
 
 button {
@@ -101,11 +143,7 @@ button {
 button:hover {
     background-color: #5c3a2d;
 }
-.studies {
-    background-color: #e4e4e44d;
-    padding-left: 2rem;
-    border-radius: 1rem;
-}
+
 .studies1 {
     display: flex;
     align-items: center;
@@ -117,4 +155,59 @@ button:hover {
     height: 100px;
     flex: 2;
     padding-right: 2rem;
+}
+
+section:has(.work1) {
+    background-color: #5c3a2d;
+    color: #fff;
+    padding: 0;
+    h2 {
+        padding: 2rem;
+    }
+    img {
+        width: 300px;
+        height: 300px;
+        border-radius: 0.5rem;
+    }
+
+    .work1, .work2, .work3 {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        padding:4rem 2rem 4rem 2rem;
+    }
+    .work1 {
+        background-color: #55362c;
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+    .work2 {
+        background-color: #694336;
+    }
+    .work3 {
+        background-color: #805647;
+    }
+}
+
+section:has(.contact-images) {
+    justify-content: space-around;
+    padding: 1rem;
+    h2 {
+        padding: 0;
+    }
+    .contact-images {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    }
+    img {
+        width: 50px;
+        height: 50px;
+        gap: 2rem;
+    }
+    a:hover {
+        background-color: #fdf4f1;
+    }
+    
 }

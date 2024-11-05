@@ -13,23 +13,35 @@
     <title>Portafolio</title>
 </head>
 <body>
+    <div class="video-background2">
+        <video autoplay muted loop id="background-video2">
+            <source src="/media/video/htmlbkgrd2.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        <div class="overlay"></div> <!-- Capa de opacidad -->
+    </div>
     <nav>
         <div class="nav-items">
             <a href="#about-me">Sobre mi</a>
             <a href="#portfolio">Portafolio</a>
             <a href="#studies">Estudios</a>
             <a href="#work-exp">Experiencias laborales</a>
-            <a href="#contact">Contacto</a>
+            <a href="#contactme">Contacto</a>
         </div>
     </nav>
     <main>
         <section id="about-me" class="about-me">
-            <img class="about-me_img" src="/media/img/profile.png" alt="">
+            <div>
+                <img class="about-me_img" src="/media/img/profile.png" alt="">
+            </div>
             <div class="about-me_text-container">
             <h2>Sobre mi</h2>
             <p>Soy una persona organizada y proactiva, con experiencia en proyectos grupales en JAVA, administración de locales y apoyo en recursos humanos. Destaco en trabajo en equipo, comunicación efectiva y gestión de operaciones diarias.
 
-                Actualmente, estoy en formación como desarrollador Fullstack JAVA, participando en proyectos grupales y ampliando mis habilidades. Busco una oportunidad en un entorno dinámico donde pueda aplicar mi experiencia y seguir creciendo profesionalmente en áreas administrativas o desarrollo web.</p>
+            Actualmente, estoy en formación como desarrollador Fullstack JAVA, participando en proyectos grupales y ampliando mis habilidades. Busco una oportunidad en un entorno dinámico donde pueda aplicar mi experiencia y seguir creciendo profesionalmente en áreas administrativas o desarrollo web.</p>
+            <div>
+                <h4>| Java - JavaScript - SpringBoot(MVC) - MySQL - HTML - CSS |</h4>
+            </div>
             </div>
         </section>
         <div class="video-background">
@@ -45,16 +57,28 @@
                         <h3>Clear Mind</h3>
                         <p>En un mundo enfocado en la productividad, muchas personas enfrentan desafíos adicionales como TDAH y ansiedad. Clear Mind es una app diseñada para mejorar la gestión del tiempo y aumentar la productividad, proporcionando un enfoque estructurado que elimina la necesidad de memorizar todas nuestras tareas, ayudando así, a miles de usuarios a alcanzar sus metas de manera más eficiente.
                         </p>
-                        <a href="#"><button>Back - End</button></a>
-                        <a href="#"><button>Front - End</button></a>
+                        <a target="_blank" href="https://github.com/LemonPie-Coding/clear-mind-initial-version.git"><button>Github</button></a>
                     </div>
-                    <img class="project1-img" src="/media/img/ClearMind-logo.jpeg" alt="">
+                    <img class="project1-img" src="/media/img/ClearMind-logo.png" alt="">
             </div>
             </div>
         </section>
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+                <source src="/media/video/studies-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            </video>
+        </div>
         <section>
             <div id="studies" class="studies">
                 <h2>Estudios</h2>
+                <div class="studies1">
+                    <div>
+                        <h3>Programa Tu Futuro, Desarrollo de habilidades socioemocionales y competencias de empleabilidad</h3>
+                        <h4>Fundación Forge</h4>
+                        <h5>Junio 2024 - Actualidad</h5>
+                    </div>
+                    <img class="studies-img" src="/media/img/forgefundation.png" alt="">
+                </div>
                 <div class="studies1">
                     <div>
                         <h3>Bootcamp Tu Futuro + Full Stack Java</h3>
@@ -85,15 +109,59 @@
                 </div>
             </div>
         </section>
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+                <source src="/media/video/treamwork-hd_1920_1080_25fps.mp4" type="video/mp4">
+            </video>
+        </div>
         <section id="work-exp" class="work-exp">
             <div>
                 <h2>Experiencias Laborales</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque repudiandae itaque tempore autem ullam id laborum quas ipsum delectus minima rem quod debitis, dolores culpa repellat, quis iure. Impedit, culpa?</p>
+                <div class="work1">
+                    <div>
+                        <h3>Administrador de local</h3>
+                        <h4>Comercial Surmax SPA</h4>
+                        <h5>Septiembre 2023 - Noviembre 2023</h5>
+                        <p>
+                            Lideré a mi equipo a desarrollar en conjunto, estrategias de ventas, atención al público, distribución de mercadería y   otras actividades como manejo de documentación de colaboradores, compras de insumos/mercadería y reclutamiento de personal.</p>
+                        <p>
+                            Sin duda una de las experiencias más dinámicas que he tenido principalmente, fortalecí mis habilidades para trabajar en equipo,realizar actividades bajo presión, la empatía y amabilidad de la atención al público hasta la meticulosidad y organización al manejar cada tipo de documento contable o de personal.
+                        </p>
+                    </div>
+                    <img src="/media/img/srmax.png" alt="">
+                </div>
+                <div class="work2">
+                    <div>
+                        <h3>Auxiliar RR.HH</h3>
+                        <h4>Easy S.A Los Ángeles</h4>
+                        <h5>Septiembre 2023 - Noviembre 2023</h5>
+                        <p>
+                            Práctica técnica universitaria como auxiliar en el departamento de Recursos Humanos, encargado de la recepción y entrega de documentación, atención en cualquier duda con el portal del colaborador, reclutamiento y selección de personal, análisis de datos para bonos, capacitaciones o beneficios y trámites varios. Además participé activamente con el equipo de publicidad para completar las tareas diarias de estrategias de venta.
+                        </p>
+                    </div>
+                    <img src="/media/img/EasySA.png" alt="">
+                </div>
+                <div class="work3">
+                    <div>
+                        <h3>Auxiliar RR.HH</h3>
+                        <h4>Falabella Los Ángeles</h4>
+                        <h5>Septiembre 2023 - Noviembre 2023</h5>
+                        <p>
+                            Practica técnica profesional en el departamento de Recursos Humanos Falabella Los Ángeles, encargado de la compra de insumos/mercadería de equipos de trabajo, reclutamiento y selección de personal, atención a colaboradores, licencias médicas, análisis de datos en planillas, entre otros.
+                        </p>
+                    </div>
+                    <img src="/media/img/falabella.png" alt="">
+                </div>
             </div>
         </section>
-        <section id="#contact" class="contact">
+        <section id="contactme" class="contact">
             <h2>Contacto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores impedit mollitia sed cupiditate nisi voluptas, soluta sapiente culpa blanditiis deleniti nostrum assumenda qui, repellat alias beatae atque molestiae doloremque harum!</p>
+            <div class="contact-images">
+                <a href="https://wa.me/56983986244" target="_blank"><img src="/media/img/whatsapplogo.png" alt=""></a>
+                <a href="mailto:felipe.leongonzalez18@gmail.com?subject=Consulta&body=Hola,%20me%20gustaría%20saber%20más..." target="_blank"><img src="/media/img/maillogo.png" alt=""></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=felipe.leongonzalez18@gmail.com&subject=Consulta&body=Hola,%20me%20gustaría%20saber%20más..." target="_blank"><img src="/media/img/gmaillogo.png" alt="Enviar con Gmail" /></a>
+                <a href="https://www.linkedin.com/in/filg/" target="_blank"><img src="/media/img/LinkedIn_logo_initials.png" alt=""></a>
+            </div>
         </section>
     </main>
 <script src="portafolio.js"></script>
