@@ -29,7 +29,7 @@ html {
 }
 body {
     margin: 0;
-    font-family: 'Noto Serif JP', serif;
+    font-family: "Open Sans";
 }
 nav {
     background-color: #8C5845;
@@ -46,9 +46,16 @@ main {
     width: 1025px;
     margin:auto;
 }
+p {
+    line-height: 1.5rem;
+}
+.profile-container {
+    text-align: center;
+    font-family: Caveat;
+    font-size: 1.5rem;
+}
 
 .nav-items {
-
     align-content: center;
 }
 .nav-items a {
@@ -108,7 +115,7 @@ h2 {
 
 section:has(.portfolio) {
     background-color: #8C5845;
-    color: #fff;
+    color: #D1B8A1;
 
     button {
         background-color: #fff;
@@ -120,17 +127,27 @@ section:has(.portfolio) {
         color: #fff;
     }
     img {
-        width: 230px;
+        width: 180px;
         display: block;
         flex: 2;
         padding-right: 2rem;
     }
+    .portfolio-project1 {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        box-shadow: 0px 4px 10px  #b59a7e8e;
+        border-radius: 1rem;
+        color: #8C5346;
+        padding: 2rem;
+        background-color: #F1E1D0;
+        p {
+            color: #C59A89;
+            line-height: 1.5rem;
+        }
+    }
 }
-.portfolio-project1 {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-}
+
 
 button {
     border-radius: 0.2rem;
@@ -143,24 +160,41 @@ button {
 button:hover {
     background-color: #5c3a2d;
 }
+section:has(.studies) {
+    .studies1 {
+        display: flex;
+        align-items: center;
+        gap: 10rem;
+        margin-bottom: 1rem;
+        box-shadow: 0px 4px 8px #8c534617;
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: #F1E1D0;
+        h3 {
+            color: #8C5346;
+        }
+        h4 {
+            color: #B59A7E;
+        }
+        h5 {
+            color: #8C5346;
+        }
+        p {
+            color: #4B3F32;
+        }
+    }
+    .studies-img {
+        width: 280px;
+        height: 100px;
+        flex: 2;
+    }
+}
 
-.studies1 {
-    display: flex;
-    align-items: center;
-    gap: 10rem;
-    margin-bottom: 3rem;
-}
-.studies-img {
-    width: 280px;
-    height: 100px;
-    flex: 2;
-    padding-right: 2rem;
-}
 
 section:has(.work1) {
     background-color: #5c3a2d;
     color: #fff;
-    padding: 0;
+    padding: 2rem;
     h2 {
         padding: 2rem;
     }
@@ -169,24 +203,24 @@ section:has(.work1) {
         height: 300px;
         border-radius: 0.5rem;
     }
-
     .work1, .work2, .work3 {
         display: flex;
         align-items: center;
         gap: 5rem;
-        padding:4rem 2rem 4rem 2rem;
+        padding: 1rem 2rem;
+        background-color: #F1E1D0;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 8px rgba(50, 50, 50, 0.2);
     }
-    .work1 {
-        background-color: #55362c;
-        display: flex;
-        align-items: center;
-        gap: 5rem;
+    h3 {
+        color: #4B3F32;
     }
-    .work2 {
-        background-color: #694336;
+    h4, h5 {
+        color: #B59A7E;
     }
-    .work3 {
-        background-color: #805647;
+    p {
+        color: #4B3F32;
     }
 }
 
@@ -209,5 +243,4 @@ section:has(.contact-images) {
     a:hover {
         background-color: #fdf4f1;
     }
-    
 }
