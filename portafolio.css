@@ -338,6 +338,7 @@ section:has(.contact-images) {
     /* Personaliza los estilos para el iPhone 14 en orientación vertical */
     body {
         border: 1px solid #000;
+        max-width: 430px;
     }
     .video-background2 {
         display: none;
@@ -347,7 +348,7 @@ section:has(.contact-images) {
     }
     nav {
         height: 5rem;
-        width: 425px;
+        width: 100vw;
     }
     #typing-effect {
         font-size: 2rem;
@@ -409,10 +410,7 @@ h2 {
     padding-bottom: 3rem;
 }
 .video-background {
-    position: relative;
-    width: 90%;
-    height: 30rem; /* Hace que cubra la ventana completa */
-    overflow: hidden;
+    display: none;
 }
 
 #background-video {
