@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="portafolio.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,19 +30,21 @@
             <a href="#contactme">Contacto</a>
         </div>
     </nav>
+    <div id="typing-effect"></div>
     <main>
         <section id="about-me" class="about-me">
             <div class="profile-container">
-                <img class="about-me_img" src="media/img/profile.png" alt="">
+                <img  class="about-me_img" src="media/img/profile.png" alt="">
                 <h1>Felipe León González</h1>
             </div>
             <div class="about-me_text-container">
             <h2>Sobre mi...</h2>
-            <p>Soy una persona organizada y proactiva, con experiencia en proyectos grupales en JAVA, administración de locales y apoyo en recursos humanos. Destaco en trabajo en equipo, comunicación efectiva y gestión de operaciones diarias.
-
-            Actualmente, estoy en formación como desarrollador Fullstack JAVA, participando en proyectos grupales y ampliando mis habilidades. Busco una oportunidad en un entorno dinámico donde pueda aplicar mi experiencia y seguir creciendo profesionalmente en áreas administrativas o desarrollo web.</p>
-            <div>
-                <h4>| Java - JavaScript - SpringBoot(MVC) - MySQL - HTML - CSS |</h4>
+            <p>Soy una persona organizada, proactiva y con una sólida experiencia en proyectos grupales y gestión de operaciones. He trabajado en áreas como desarrollo en Java, administración de locales y gestión de recursos humanos, donde he fortalecido mi capacidad para trabajar en equipo, mantener una comunicación efectiva y optimizar procesos diarios.
+            </p>
+            <p>Actualmente, estoy en formación como desarrollador Fullstack JAVA, participando en proyectos grupales y ampliando mis habilidades. Busco una oportunidad en un entorno dinámico donde pueda aplicar mi experiencia y seguir creciendo profesionalmente en áreas administrativas o desarrollo web.
+            </p>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="techs">
+                <h4 >| Java - JavaScript - SpringBoot(MVC) - MySQL - HTML - CSS |</h4>
             </div>
             </div>
         </section>
@@ -51,13 +54,14 @@
             </video>
         </div>
         <section>
-            <div id="portfolio" class="portfolio">
+            <div data-aos="fade-left" data-aos-duration="1000" id="portfolio" class="portfolio">
                 <h2>Portafolio ✧</h2>
             <div class="portfolio-project1">
                     <div>
                         <h3>Clear Mind</h3>
                         <p>En un mundo enfocado en la productividad, muchas personas enfrentan desafíos adicionales como TDAH y ansiedad. Clear Mind es una app diseñada para mejorar la gestión del tiempo y aumentar la productividad, proporcionando un enfoque estructurado que elimina la necesidad de memorizar todas nuestras tareas, ayudando así, a miles de usuarios a alcanzar sus metas de manera más eficiente.
                         </p>
+                        <button id="openModal">Demostración</button>
                         <a target="_blank" href="https://github.com/LemonPie-Coding/clear-mind-initial-version.git"><button>Github</button></a>
                     </div>
                     <img class="project1-img" src="media/img/ClearMind-logo.png" alt="">
@@ -72,7 +76,7 @@
         <section>
             <div id="studies" class="studies">
                 <h2>Estudios</h2>
-                <div class="studies1">
+                <div data-aos="fade-right" data-aos-duration="1000" class="studies1">
                     <div>
                         <h3>Programa Tu Futuro, Desarrollo de habilidades socioemocionales y competencias de empleabilidad</h3>
                         <h4>Fundación Forge</h4>
@@ -80,7 +84,7 @@
                     </div>
                     <img class="studies-img" src="media/img/forgefoundation.png" alt="">
                 </div>
-                <div class="studies1">
+                <div data-aos="fade-left" data-aos-duration="1000" class="studies1">
                     <div>
                         <h3>Bootcamp Tu Futuro + Full Stack Java</h3>
                         <h4>Coding Dojo</h4>
@@ -90,7 +94,7 @@
                     </div>
                     <img class="studies-img" src="media/img/codingdojologo.png" alt="">
                 </div>
-                <div class="studies1">
+                <div data-aos="fade-right" data-aos-duration="1000" class="studies1">
                     <div>
                         <h3>Ingeniería en Administración y Ejecución de Empresas</h3>
                         <h4>Universidad Católica de la Santísima Concepción</h4>
@@ -99,7 +103,7 @@
                     </div>
                     <img class="studies-img" src="media/img/UCSC,_Universidad_Católica_de_la_Santísima_Concepción.png" alt="">
                 </div>
-                <div class="studies1">
+                <div data-aos="fade-left" data-aos-duration="1000" class="studies1">
                     <div>
                         <h3>Téc. Universitario en Administración y Ejecución de Empresas</h3>
                         <h4>Universidad Católica de la Santísima Concepción</h4>
@@ -118,7 +122,7 @@
         <section id="work-exp" class="work-exp">
             <div>
                 <h2>Experiencias Laborales</h2>
-                <div class="work1">
+                <div data-aos="fade-up" data-aos-duration="1000" class="work1">
                     <div>
                         <h3>Administrador de local</h3>
                         <h4>Comercial Surmax SPA</h4>
@@ -131,7 +135,7 @@
                     </div>
                     <img src="media/img/srmax.png" alt="">
                 </div>
-                <div class="work2">
+                <div data-aos="fade-up" data-aos-duration="1000" class="work2">
                     <div>
                         <h3>Auxiliar RR.HH</h3>
                         <h4>Easy S.A Los Ángeles</h4>
@@ -142,7 +146,7 @@
                     </div>
                     <img src="media/img/EasySA.png" alt="">
                 </div>
-                <div class="work3">
+                <div data-aos="fade-up" data-aos-duration="1000" class="work3">
                     <div>
                         <h3>Auxiliar RR.HH</h3>
                         <h4>Falabella Los Ángeles</h4>
@@ -164,7 +168,20 @@
                 <a href="https://www.linkedin.com/in/filg/" target="_blank"><img src="media/img/LinkedIn_logo_initials.png" alt=""></a>
             </div>
         </section>
+
+        <!-- Modales -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal">&times;</span>
+                <video id="clear-mind_test" class="clear-mind_test" controls src="/media/video/clear_mind_test.mp4"></video>
+            </div>
+        </div>
+
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+</script>
 <script src="portafolio.js"></script>
 </body>
 </html>
