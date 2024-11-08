@@ -453,7 +453,7 @@ section:has(.contact-images) {
         display: none;
     }
     #portfolio, #studies, #work-exp, #contact, #about-me {
-        scroll-margin-top: 0; /* Valor según la altura de tu navbar */
+        scroll-margin-top: 10rem; /* Valor según la altura de tu navbar */
     }
     section:has(.portfolio) {
         background-color: #2ECC71;
