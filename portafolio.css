@@ -365,7 +365,6 @@ section:has(.contact-images) {
     body {
         min-width: 768px;
         margin: 0;
-
     }
     .video-background2 {
         display: none;
@@ -597,80 +596,18 @@ section:has(.contact-images) {
             }
         }
     }
-    section:has(.contact-images) {
-        justify-content: space-around;
-        padding: 1rem;
-        h2 {
-            padding: 0;
-        }
-        .contact-images {
-            display: flex;
-            gap: 3rem;
-            align-items: center;
-        }
-        img {
-            width: 50px;
-            height: 50px;
-            gap: 2rem;
-        }
-        a:hover {
-            background-color: #fdf4f1;
-        }
+     .modal {
+        width: 98%;
+        background-color: rgba(0, 0, 0, 0.226);
     }
-    
-    .modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-    }
-    
-    .modal.show {
-        display: block;
-        opacity: 1;
-    }
-    
     .modal-content {
-        position: relative;
-        margin: 5% auto;
-        padding: 20px;
-        background-color: white;
-        border-radius: 10px;
+        margin: 50% auto;
         width: 90%;  /* Establece un ancho máximo para el modal */
-        max-width: 800px; /* Limita el ancho máximo */
+        max-width: 80%; /* Limita el ancho máximo */
         max-height: 90vh; /* Limita la altura del modal */
         overflow: hidden; /* Evita que el contenido se desborde */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #closeModal {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 30px;
-        color: rgb(255, 255, 255);
-        background-color: #df3636;
-        cursor: pointer;
-        z-index: 1100;
-        transition: all 0.3s ease;
-        width: 2rem;
-        text-align: center;
-        align-items: center;
-        border: 1px solid #000;
-        }
-    
-    
-    #closeModal:hover {
-            transform: scale(1.1);
-        }
-    
+    } 
     .clear-mind_test {
-        width: 100%;
+        width: 90%;
     }
 }
