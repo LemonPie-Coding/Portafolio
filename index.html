@@ -1,188 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="icon" href="/media/img/png_z53hu.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="portafolio.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="icon" href="/media/img/png_z53hu.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portafolio.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Felipe León - Portafolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="video-background2">
-        <video autoplay muted loop id="background-video2">
-            <source src="media/video/htmlbkgrd2.mp4" type="video/mp4">
-            Tu navegador no soporta el video.
-        </video>
-        <div class="overlay"></div> <!-- Capa de opacidad -->
+      <video autoplay muted loop id="background-video2">
+        <source src="media/video/htmlbkgrd2.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+      <div class="overlay"></div>
+      <!-- Capa de opacidad -->
     </div>
     <nav>
-        <div class="nav-items">
-            <a href="#about-me">Sobre mi</a>
-            <a href="#portfolio">Portafolio</a>
-            <a href="#studies">Estudios</a>
-            <a href="#work-exp">Experiencias laborales</a>
-            <a href="#contactme">Contacto</a>
-        </div>
+      <div class="nav-items">
+        <a href="#about-me">Sobre mi</a>
+        <a href="#portfolio">Portafolio</a>
+        <a href="#studies">Estudios</a>
+        <a href="#work-exp">Experiencias laborales</a>
+        <a href="#contactme">Contacto</a>
+      </div>
     </nav>
     <div id="typing-effect"></div>
     <main>
-        <section id="about-me" class="about-me">
-            <div class="profile-container">
-                <img  class="about-me_img" src="media/img/profile.png" alt="">
-                <h1>Felipe León González</h1>
-            </div>
-            <div class="about-me_text-container">
-            <h2>Sobre mi...</h2>
-            <p>Soy una persona organizada, proactiva y con una sólida experiencia en proyectos grupales y gestión de operaciones. He trabajado en áreas como desarrollo en Java, administración de locales y gestión de recursos humanos, donde he fortalecido mi capacidad para trabajar en equipo, mantener una comunicación efectiva y optimizar procesos diarios.
-            </p>
-            <p>Actualmente, estoy en formación como desarrollador Fullstack JAVA, participando en proyectos grupales y ampliando mis habilidades. Busco una oportunidad en un entorno dinámico donde pueda aplicar mi experiencia y seguir creciendo profesionalmente en áreas administrativas o desarrollo web.
-            </p>
-            <div data-aos="zoom-in" data-aos-duration="1000" class="techs">
-                <h4 >| Java - JavaScript - SpringBoot(MVC) - MySQL - HTML - CSS |</h4>
-            </div>
-            </div>
-        </section>
-        <div class="video-background">
-            <video autoplay muted loop id="background-video">
-                <source src="media/video/852057-hd_1920_1080_30fps.mp4" type="video/mp4">
-            </video>
+      <section id="about-me" class="about-me">
+        <div class="profile-container">
+          <img class="about-me_img" src="media/img/profile.png" alt="" />
+          <h1>Felipe León González</h1>
         </div>
-        <section>
-            <div data-aos="fade-left" data-aos-duration="1000" id="portfolio" class="portfolio">
-                <h2>Portafolio ✧</h2>
-            <div class="portfolio-project1">
-                    <div>
-                        <h3>Clear Mind</h3>
-                        <p>En un mundo enfocado en la productividad, muchas personas enfrentan desafíos adicionales como TDAH y ansiedad. Clear Mind es una app diseñada para mejorar la gestión del tiempo y aumentar la productividad, proporcionando un enfoque estructurado que elimina la necesidad de memorizar todas nuestras tareas, ayudando así, a miles de usuarios a alcanzar sus metas de manera más eficiente.
-                        </p>
-                        <button id="openModal">Demostración</button>
-                        <a target="_blank" href="https://github.com/LemonPie-Coding/clear-mind-initial-version.git"><button>Github</button></a>
-                    </div>
-                    <img class="project1-img" src="media/img/ClearMind-logo.png" alt="">
-            </div>
-            </div>
-        </section>
-        <div class="video-background">
-            <video autoplay muted loop id="background-video">
-                <source src="media/video/studies-uhd_3840_2160_25fps.mp4" type="video/mp4">
-            </video>
+        <div class="about-me_text-container">
+          <h2>Sobre mi...</h2>
+          <p>
+            Soy una persona organizada, proactiva y con una sólida experiencia
+            en proyectos grupales y gestión de operaciones. He trabajado en
+            áreas como desarrollo en Java, administración de locales y gestión
+            de recursos humanos, donde he fortalecido mi capacidad para trabajar
+            en equipo, mantener una comunicación efectiva y optimizar procesos
+            diarios.
+          </p>
+          <p>
+            Actualmente, estoy en formación como desarrollador Fullstack JAVA,
+            participando en proyectos grupales y ampliando mis habilidades.
+            Busco una oportunidad en un entorno dinámico donde pueda aplicar mi
+            experiencia y seguir creciendo profesionalmente en áreas
+            administrativas o desarrollo web.
+          </p>
+          <div data-aos="zoom-in" data-aos-duration="1000" class="techs">
+            <h4>
+              | Java - JavaScript - SpringBoot(MVC) - MySQL - HTML - CSS |
+            </h4>
+          </div>
         </div>
-        <section>
-            <div id="studies" class="studies">
-                <h2>Estudios</h2>
-                <div data-aos="fade-right" data-aos-duration="1000" class="studies1">
-                    <div>
-                        <h3>Programa Tu Futuro, Desarrollo de habilidades socioemocionales y competencias de empleabilidad</h3>
-                        <h4>Fundación Forge</h4>
-                        <h5>Junio 2024 - Actualidad</h5>
-                    </div>
-                    <img class="studies-img" src="media/img/forgefoundation.png" alt="">
-                </div>
-                <div data-aos="fade-left" data-aos-duration="1000" class="studies1">
-                    <div>
-                        <h3>Bootcamp Tu Futuro + Full Stack Java</h3>
-                        <h4>Coding Dojo</h4>
-                        <h5>Junio 2024 - Octubre 2024</h5>
-                        <p>Certificación completada tras la presentación de "Clear Mind", exámenes lógicos y más de 320 horas de estudio.</p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1vkvpZQQMwAwGLIk7xuRW3jB8zij9cLHJ/view?usp=drive_link"><button class="coding-dojo_cert">Certificado</button></a>
-                    </div>
-                    <img class="studies-img" src="media/img/codingdojologo.png" alt="">
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1000" class="studies1">
-                    <div>
-                        <h3>Ingeniería en Administración y Ejecución de Empresas</h3>
-                        <h4>Universidad Católica de la Santísima Concepción</h4>
-                        <h5>Marzo 2022 - Agosto 2023</h5>
-                        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1uYqH6vhXeKFilvDJXPBV5io2wtxIIF6m/view?usp=drive_link"><button class="coding-dojo_cert">Certificado</button></a>
-                    </div>
-                    <img class="studies-img" src="media/img/UCSC,_Universidad_Católica_de_la_Santísima_Concepción.png" alt="">
-                </div>
-                <div data-aos="fade-left" data-aos-duration="1000" class="studies1">
-                    <div>
-                        <h3>Téc. Universitario en Administración y Ejecución de Empresas</h3>
-                        <h4>Universidad Católica de la Santísima Concepción</h4>
-                        <h5>Marzo 2022 - Agosto 2023</h5>
-                        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1_4mUlCUfMmdjZOSqSEw2r_ZxKGlCEaHh/view?usp=sharing"><button class="coding-dojo_cert">Certificado</button></a>
-                    </div>
-                    <img class="studies-img" src="media/img/UCSC,_Universidad_Católica_de_la_Santísima_Concepción.png" alt="">
-                </div>
-            </div>
-        </section>
-        <div class="video-background">
-            <video autoplay muted loop id="background-video">
-                <source src="media/video/treamwork-hd_1920_1080_25fps.mp4" type="video/mp4">
-            </video>
-        </div>
-        <section id="work-exp" class="work-exp">
+      </section>
+      <div class="video-background">
+        <video autoplay muted loop id="background-video">
+          <source
+            src="media/video/852057-hd_1920_1080_30fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <section>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          id="portfolio"
+          class="portfolio"
+        >
+          <h2>Portafolio ✧</h2>
+          <div class="portfolio_project">
             <div>
-                <h2>Experiencias Laborales</h2>
-                <div data-aos="fade-up" data-aos-duration="1000" class="work1">
-                    <div>
-                        <h3>Administrador de local</h3>
-                        <h4>Comercial Surmax SPA</h4>
-                        <h5>Septiembre 2023 - Noviembre 2023</h5>
-                        <p>
-                            Lideré a mi equipo a desarrollar en conjunto, estrategias de ventas, atención al público, distribución de mercadería y   otras actividades como manejo de documentación de colaboradores, compras de insumos/mercadería y reclutamiento de personal.</p>
-                        <p>
-                            Sin duda una de las experiencias más dinámicas que he tenido principalmente, fortalecí mis habilidades para trabajar en equipo,realizar actividades bajo presión, la empatía y amabilidad de la atención al público hasta la meticulosidad y organización al manejar cada tipo de documento contable o de personal.
-                        </p>
-                    </div>
-                    <img src="media/img/srmax.png" alt="">
-                </div>
-                <div data-aos="fade-up" data-aos-duration="1000" class="work2">
-                    <div>
-                        <h3>Auxiliar RR.HH</h3>
-                        <h4>Easy S.A Los Ángeles</h4>
-                        <h5>Septiembre 2023 - Noviembre 2023</h5>
-                        <p>
-                            Práctica técnica universitaria como auxiliar en el departamento de Recursos Humanos, encargado de la recepción y entrega de documentación, atención en cualquier duda con el portal del colaborador, reclutamiento y selección de personal, análisis de datos para bonos, capacitaciones o beneficios y trámites varios. Además participé activamente con el equipo de publicidad para completar las tareas diarias de estrategias de venta.
-                        </p>
-                    </div>
-                    <img src="media/img/EasySA.png" alt="">
-                </div>
-                <div data-aos="fade-up" data-aos-duration="1000" class="work3">
-                    <div>
-                        <h3>Auxiliar RR.HH</h3>
-                        <h4>Falabella Los Ángeles</h4>
-                        <h5>Septiembre 2023 - Noviembre 2023</h5>
-                        <p>
-                            Practica técnica profesional en el departamento de Recursos Humanos Falabella Los Ángeles, encargado de la compra de insumos/mercadería de equipos de trabajo, reclutamiento y selección de personal, atención a colaboradores, licencias médicas, análisis de datos en planillas, entre otros.
-                        </p>
-                    </div>
-                    <img src="media/img/falabella.png" alt="">
-                </div>
+              <h3>Clear Mind</h3>
+              <p>
+                En un mundo enfocado en la productividad, muchas personas
+                enfrentan desafíos adicionales como TDAH y ansiedad. Clear Mind
+                es una app diseñada para mejorar la gestión del tiempo y
+                aumentar la productividad, proporcionando un enfoque
+                estructurado que elimina la necesidad de memorizar todas
+                nuestras tareas, ayudando así, a miles de usuarios a alcanzar
+                sus metas de manera más eficiente.
+              </p>
+              <button id="openModal">Demostración</button>
+              <a
+                target="_blank"
+                href="https://github.com/LemonPie-Coding/clear-mind-initial-version.git"
+                ><button>Github</button></a
+              >
             </div>
-        </section>
-        <section id="contactme" class="contact">
-            <h2>Contacto</h2>
-            <div class="contact-images">
-                <a href="https://wa.me/56983986244" target="_blank"><img src="media/img/whatsapplogo.png" alt=""></a>
-                <a href="mailto:felipe.leongonzalez18@gmail.com?subject=Consulta&body=Hola,%20me%20gustaría%20saber%20más..." target="_blank"><img src="media/img/maillogo.png" alt=""></a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=felipe.leongonzalez18@gmail.com&subject=Consulta&body=Hola,%20me%20gustaría%20saber%20más..." target="_blank"><img src="media/img/gmaillogo.png" alt="Enviar con Gmail" /></a>
-                <a href="https://www.linkedin.com/in/filg/" target="_blank"><img src="media/img/LinkedIn_logo_initials.png" alt=""></a>
-            </div>
-        </section>
-
-        <!-- Modales -->
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span id="closeModal">&times;</span>
-                <video id="clear-mind_test" class="clear-mind_test" controls src="/media/video/clear_mind_test.mp4"></video>
-            </div>
+            <img
+              class="project-img"
+              src="media/img/ClearMind-logo.png"
+              alt=""
+            />
+          </div>
         </div>
+      </section>
+      <div class="video-background">
+        <video autoplay muted loop id="background-video">
+          <source
+            src="media/video/studies-uhd_3840_2160_25fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <section>
+        <div id="studies" class="studies">
+          <h2>Estudios</h2>
+          <div data-aos="fade-right" data-aos-duration="1000" class="education">
+            <div>
+              <h3>
+                Programa Tu Futuro, Desarrollo de habilidades socioemocionales y
+                competencias de empleabilidad
+              </h3>
+              <h4>Fundación Forge</h4>
+              <h5>Junio 2024 - Actualidad</h5>
+            </div>
+            <img
+              class="education_img"
+              src="media/img/forgefoundation.png"
+              alt=""
+            />
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1000" class="education">
+            <div>
+              <h3>Bootcamp Tu Futuro + Full Stack Java</h3>
+              <h4>Coding Dojo</h4>
+              <h5>Junio 2024 - Octubre 2024</h5>
+              <p>
+                Certificación completada tras la presentación de "Clear Mind",
+                exámenes lógicos y más de 320 horas de estudio.
+              </p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1vkvpZQQMwAwGLIk7xuRW3jB8zij9cLHJ/view?usp=drive_link"
+                ><button class="coding-dojo_cert">Certificado</button></a
+              >
+            </div>
+            <img
+              class="education_img"
+              src="media/img/codingdojologo.png"
+              alt=""
+            />
+          </div>
+          <div data-aos="fade-right" data-aos-duration="1000" class="education">
+            <div>
+              <h3>Ingeniería en Administración y Ejecución de Empresas</h3>
+              <h4>Universidad Católica de la Santísima Concepción</h4>
+              <h5>Marzo 2022 - Agosto 2023</h5>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1uYqH6vhXeKFilvDJXPBV5io2wtxIIF6m/view?usp=drive_link"
+                ><button class="coding-dojo_cert">Certificado</button></a
+              >
+            </div>
+            <img
+              class="education_img"
+              src="media/img/UCSC,_Universidad_Católica_de_la_Santísima_Concepción.png"
+              alt=""
+            />
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1000" class="education">
+            <div>
+              <h3>
+                Téc. Universitario en Administración y Ejecución de Empresas
+              </h3>
+              <h4>Universidad Católica de la Santísima Concepción</h4>
+              <h5>Marzo 2022 - Agosto 2023</h5>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1_4mUlCUfMmdjZOSqSEw2r_ZxKGlCEaHh/view?usp=sharing"
+                ><button class="coding-dojo_cert">Certificado</button></a
+              >
+            </div>
+            <img
+              class="education_img"
+              src="media/img/UCSC,_Universidad_Católica_de_la_Santísima_Concepción.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <div class="video-background">
+        <video autoplay muted loop id="background-video">
+          <source
+            src="media/video/treamwork-hd_1920_1080_25fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <section id="work-exp" class="work-exp">
+        <div>
+          <h2>Experiencias Laborales</h2>
+          <div data-aos="fade-up" data-aos-duration="1000" class="work">
+              <div class="work-header">
+                <h3>Administrador de local</h3>
+                <h4>Comercial Surmax SPA</h4>
+                <h5>Septiembre 2023 - Noviembre 2023</h5>
+              </div>
+              <div class="work_info-container">
+                <div class="work-1st">
+                  <h3>📈 Responsabilidades clave</h3>
+                  <ul>
+                    <li>
+                      Estrategias de Venta: Implementé estrategias efectivas
+                      para mejorar el flujo de clientes y optimizar la
+                      experiencia de compra.
+                    </li>
+                    <li>
+                      Atención al Cliente: Diseñé y llevé a cabo capacitaciones
+                      en servicio al cliente, promoviendo un enfoque centrado en
+                      el cliente.
+                    </li>
+                    <li>
+                      Gestión de Personal: Supervisé un equipo multifuncional,
+                      asegurando un ambiente de trabajo colaborativo y orientado
+                      a resultados.
+                    </li>
+                    <li>
+                      Compras y Logística: Coordiné las compras de insumos y la
+                      logística de distribución de productos, optimizando los
+                      tiempos de entrega y disponibilidad de inventario.
+                    </li>
+                  </ul>
+                  <h3>🤝 Habilidades Clave</h3>
+                  <ul>
+                    <li>
+                      Liderazgo: Coordinación y motivación de equipos para
+                      alcanzar metas comunes.
+                    </li>
+                    <li>
+                      Organización: Gestión estructurada de inventarios y
+                      documentación administrativa.
+                    </li>
+                    <li>
+                      Trabajo bajo presión: Capacidad para mantener la
+                      eficiencia en situaciones de alta demanda.
+                    </li>
+                    <li>
+                      Orientación a Resultados: Firme compromiso con el logro de
+                      objetivos estratégicos.
+                    </li>
+                  </ul>
+                </div>
+                <div class="work-2nd">
+                  <img src="media/img/srmax.png" alt="" />
+                  <div>
+                    <h3>💡 Logro Destacado</h3>
+                    <p>
+                      "Desarrollé e implementé un sistema de organización en el
+                      área operativa que mejoró la eficiencia en la gestión de
+                      recursos y contribuyó a un entorno de trabajo más
+                      ordenado."
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" class="work">
+            <div class="work-header">
+              <h3>Auxiliar RR.HH</h3>
+              <h4>Easy S.A Los Ángeles</h4>
+              <h5>Enero 2021 - Marzo 2021</h5>
+            </div>
+            <div class="work_info-container">
+              <div class="work-1st">
+                <h3>📈 Responsabilidades clave</h3>
+                <ul>
+                  <li>
+                    Documentación y Trámites: Encargado de la recepción y entrega de documentación, facilitando la gestión administrativa del departamento de Recursos Humanos.
+                  </li>
+                  <li>
+                    Atención al Personal: Resolución de dudas y soporte en el uso del portal del colaborador para mejorar la experiencia de los empleados.
+                  </li>
+                  <li>
+                    Reclutamiento y Selección: Apoyo en el proceso de reclutamiento, incluyendo la coordinación de entrevistas y la selección de personal.
+                  </li>
+                  <li>
+                    Análisis de Datos: Realización de análisis de datos para definir bonos, capacitaciones y beneficios, contribuyendo a una toma de decisiones informada en la organización.
+                  </li>
+                  <li>
+                    Apoyo en Publicidad: Colaboración con el equipo de publicidad para completar tareas diarias de estrategias de venta, reforzando el trabajo interdepartamental.
+                  </li>
+                </ul>
+                <h3>💼 Habilidades Clave</h3>
+                <ul>
+                  <li>
+                    Gestión Documental: Organización y manejo eficiente de documentación y trámites.
+                  </li>
+                  <li>
+                    Comunicación Efectiva: Atención al colaborador y resolución de dudas con claridad y empatía.
+                  </li>
+                  <li>
+                    Reclutamiento y Selección: Capacidad para apoyar en los procesos de reclutamiento y selección de personal.
+                  </li>
+                  <li>
+                    Análisis de Datos: Habilidad para interpretar datos y apoyar en la toma de decisiones.
+                  </li>
+                  <li>
+                    Colaboración Interdepartamental: Experiencia trabajando con otros equipos para alcanzar objetivos comunes.
+                  </li>
+                </ul>
+              </div>
+              <div class="work-2nd">
+                <img src="media/img/EasySA.png" alt="" />
+                <div>
+                  <h3>🌟 Logro Destacado</h3>
+                  <p>
+                    "Participé en el análisis de datos para mejorar la asignación de bonos y beneficios, optimizando el proceso para una mejor alineación con las necesidades del personal."
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="work">
+            <div class="work-header">
+              <h3>Auxiliar RR.HH</h3>
+              <h4>Falabella Los Ángeles</h4>
+              <h5>Noviembre 2018 - Enero 2019</h5>
+            </div>
+            <div class="work_info-container">
+              <div class="work-1st">
+                <h3>📝 Responsabilidades clave</h3>
+                <ul>
+                  <li>
+                    Gestión de Insumos: Compra y suministro de materiales para equipos de trabajo.
+                  </li>
+                  <li>
+                    Reclutamiento y Selección: Coordinación de contratación masiva en temporada navideña.
+                  </li>
+                  <li>
+                    Apoyo en Ventas y Logística: Reposición de productos y toma de inventarios en departamentos de alta demanda.
+                  </li>
+                  <li>
+                    Inventarios con Logística: Participación en la toma de inventarios junto al equipo de logística, utilizando capturadoras de código de barras para asegurar la precisión de los registros y optimizar la gestión de stock.
+                  </li>
+                  <li>
+                    Atención al Colaborador: Asistencia en temas administrativos y licencias médicas.
+                  </li>
+                  <li>
+                    Análisis de Datos: Uso de planillas para reportes en bonos y beneficios.
+                  </li>
+                  <li>
+                    Relación con Proveedores: Gestión de pagos y facturas.
+                  </li>
+                </ul>
+                <h3>💼 Habilidades Clave</h3>
+                <ul>
+                  <li>
+                    Gestión de compras y proveedores
+                  </li>
+                  <li>
+                    Reclutamiento en alta demanda
+                  </li>
+                  <li>
+                    Apoyo operativo en ventas y logística
+                  </li>
+                  <li>
+                    Atención al Detalle: Precisión en el manejo de licencias médicas, pagos, y toma de inventario.
+                  </li>
+                  <li>
+                    Trabajo en ambientes dinámicos y de alta presión
+                  </li>
+                </ul>
+              </div>
+              <div class="work-2nd">
+                <img src="media/img/falabella.png" alt="" />
+                <div>
+                  <h3>🌟 Logro Destacado</h3>
+                  <p>
+                    "Participé en el reclutamiento masivo y capacitación de personal temporal durante la temporada navideña, contribuyendo a un ambiente de trabajo ágil y bien organizado en una de las épocas más intensas del retail."
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="contactme" class="contact">
+        <h2>Contacto</h2>
+        <div class="contact-images">
+          <a href="https://wa.me/56983986244" target="_blank"
+            ><img src="media/img/whatsapplogo.png" alt=""
+          /></a>
+          <a
+            href="mailto:felipe.leongonzalez18@gmail.com?subject=Consulta&body=Hola,%20me%20gustaría%20saber%20más..."
+            target="_blank"
+            ><img src="media/img/maillogo.png" alt=""
+          /></a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=felipe.leongonzalez18@gmail.com&subject=Consulta&body=Hola,%20me%20gustaría%20saber%20más..."
+            target="_blank"
+            ><img src="media/img/gmaillogo.png" alt="Enviar con Gmail"
+          /></a>
+          <a href="https://www.linkedin.com/in/filg/" target="_blank"
+            ><img src="media/img/LinkedIn_logo_initials.png" alt=""
+          /></a>
+        </div>
+      </section>
 
+      <!-- Modales -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal">&times;</span>
+          <video
+            id="clear-mind_test"
+            class="clear-mind_test"
+            controls
+            src="/media/video/clear_mind_test.mp4"
+          ></video>
+        </div>
+      </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
-    AOS.init();
-</script>
-<script src="portafolio.js"></script>
-</body>
+      AOS.init();
+    </script>
+    <script src="portafolio.js"></script>
+  </body>
 </html>
